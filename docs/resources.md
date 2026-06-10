@@ -134,6 +134,26 @@ AI-relevant, or broader applied category theory.
   categorical style.
 - Caution: Mostly broader applied category theory.
 
+### Position: Categorical Deep Learning is an Algebraic Theory of All Architectures
+
+- Link: <https://proceedings.mlr.press/v235/gavranovic24a.html>
+- Labels: Applied Category Theory, AI-Relevant
+- Level: advanced
+- Why it matters: A serious categorical deep learning position paper that helps
+  situate architecture-level ideas in algebraic and categorical language.
+- Caution: This is important for categorical AI, but it should not be presented
+  as core topos theory.
+
+### Geometric Deep Learning: Grids, Groups, Graphs, Geodesics, and Gauges
+
+- Link: <https://facundoq.github.io/assets/gdl/main.html>
+- Labels: AI-Relevant
+- Level: intermediate
+- Why it matters: A major unifying framework for neural architectures over
+  structured domains.
+- Caution: This is geometric and categorical-adjacent background, not topos
+  theory.
+
 ## How To Read This List
 
 Recommended order:
