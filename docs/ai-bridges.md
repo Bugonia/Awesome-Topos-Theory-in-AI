@@ -66,6 +66,12 @@ This distinction is important. Sheaf neural networks are a serious topic in
 topological deep learning, but they generally do not require the full machinery
 of elementary or Grothendieck topoi.
 
+Recent topological deep learning work, such as TopoU-Net on combinatorial
+complexes, is also relevant background. It studies neural architectures over
+higher-order cells and incidence relations, but should be classified as
+topological deep learning rather than topos theory unless a genuine topos,
+site, sheaf category, or internal logic is used.
+
 ### Internal Languages and Typed Reasoning
 
 Topoi support internal languages. This connects to:

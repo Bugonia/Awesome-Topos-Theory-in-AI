@@ -127,6 +127,23 @@ AI-relevant, or broader applied category theory.
   especially around heterophily and oversmoothing.
 - Caution: Classify as sheaf-based graph learning, not as core topos theory.
 
+## Topological Deep Learning Near Topos and Sheaves
+
+### TopoU-Net: A U-Net Architecture for Topological Domains
+
+- Link: <https://arxiv.org/abs/2605.10091>
+- Authors: Gaurav Gaurav, Ibrahem ALJabea, Yaroslav Zakomornyy, Eric Frank,
+  Mohamed Elhamdadi, Theodore Papamarkou, Mustafa Hajij
+- Labels: AI-Relevant, Applied Category Theory
+- Level: intermediate
+- Why it matters: A 2026 architecture paper that extends the U-Net
+  encoder-decoder principle to combinatorial complexes, using rank paths,
+  incidence-based transport, and matched-rank skip connections across nodes,
+  edges, faces, hyperedges, and other cells.
+- Caution: This is topological deep learning on combinatorial complexes, not
+  topos theory. It is useful background for higher-order structured data and
+  sheaf/topology-adjacent ML.
+
 ## Broader Applied Category Theory Near AI
 
 ### Category Theory for the Sciences
