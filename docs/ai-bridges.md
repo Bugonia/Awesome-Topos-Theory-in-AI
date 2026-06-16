@@ -3,6 +3,19 @@
 This page records the AI-facing connections that are promising enough to study,
 while keeping the claims modest.
 
+## Recent Survey Context
+
+Jia, Peng, Yang, and Chen's 2025 survey, "Category-Theoretical and
+Topos-Theoretical Frameworks in Machine Learning," is a useful overview of the
+current landscape. It divides category-derived machine learning into
+gradient-based, probability-based, invariance/equivalence-based, and
+topos-based directions.
+
+Use it as a map, not as a final verdict. Its first three tracks are closer to
+established applied category theory, while the topos-based track collects a more
+exploratory body of work around sheaves, stacks, internal logic, local-global
+structure, and Lafforgue-style proposals for AI.
+
 ## Stronger Bridges
 
 ### Sheaves for Local-to-Global Consistency

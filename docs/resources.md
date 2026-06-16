@@ -4,6 +4,21 @@ This page favors reliable starting points over long lists. Each item is labeled
 so that readers can see whether it is core topos theory, sheaf-theoretic,
 AI-relevant, or broader applied category theory.
 
+## Recent Surveys
+
+### Category-Theoretical and Topos-Theoretical Frameworks in Machine Learning: A Survey
+
+- Link: <https://doi.org/10.3390/axioms14030204>
+- Authors: Yiyang Jia, Guohong Peng, Zheng Yang, Tianhao Chen
+- Labels: Applied Category Theory, AI-Relevant, Speculative Bridge
+- Level: intermediate to advanced
+- Why it matters: A 2025 survey that organizes category-derived machine
+  learning around gradient-based learning, probability-based learning,
+  invariance/equivalence-based learning, and topos-based learning.
+- Caution: Valuable as a map of recent claims and references, but many of the
+  topos-based ML directions are still exploratory. Read its topos sections
+  alongside primary sources and the taxonomy in this repository.
+
 ## Category Theory Prerequisites
 
 ### Basic Category Theory

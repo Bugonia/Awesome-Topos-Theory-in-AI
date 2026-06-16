@@ -74,6 +74,16 @@ See [docs/ai-bridges.md](docs/ai-bridges.md).
 
 ## Core Topos Theory
 
+### Recent Survey Entry Point
+
+- Yiyang Jia, Guohong Peng, Zheng Yang, and Tianhao Chen,
+  "Category-Theoretical and Topos-Theoretical Frameworks in Machine Learning:
+  A Survey," *Axioms* 14, 204, 2025.
+- DOI: <https://doi.org/10.3390/axioms14030204>
+- Recommended use: read as a recent map of categorical machine learning and
+  topos-oriented proposals, while keeping the speculative topos-based ML claims
+  separate from established core topos theory.
+
 ### Categories, Functors, Natural Transformations
 
 - Steve Awodey, *Category Theory*.
