@@ -182,6 +182,8 @@ Use the checklist in [docs/resource-taxonomy.md](docs/resource-taxonomy.md).
 ## Repository Map
 
 - [docs/learning-paths.md](docs/learning-paths.md): guided study routes.
+- [docs/topos-ml-study-plan.md](docs/topos-ml-study-plan.md): step-by-step
+  plan from basic category theory to topos-based machine learning.
 - [docs/core-concepts.md](docs/core-concepts.md): compact concept map.
 - [docs/resources.md](docs/resources.md): curated books, notes, and papers.
 - [docs/ai-bridges.md](docs/ai-bridges.md): careful AI-facing bridge topics.

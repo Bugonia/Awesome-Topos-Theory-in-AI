@@ -160,3 +160,25 @@ If you want the shortest serious path:
 3. Mac Lane and Moerdijk, early chapters on sheaves and topoi.
 4. One application area: contextuality, sheaves on data, or type-theoretic
    semantics.
+
+## Recommended Topos-Based ML Sequence
+
+Use this sequence if your goal is specifically to understand topos-based machine
+learning from a modest category theory background.
+
+1. Review category, functor, natural transformation, limit, adjunction, and
+   Yoneda.
+2. Learn presheaves as context-indexed data.
+3. Learn sheaves as compatible local data with gluing.
+4. Learn Grothendieck topologies and sites as chosen notions of cover.
+5. Learn Grothendieck topoi as categories of sheaves on sites.
+6. Learn subobject classifiers and internal logic.
+7. Read sheaf neural networks, neural sheaf diffusion, and TopoU-Net as
+   topology/sheaf-adjacent ML background.
+8. Read the Axioms survey as a map of the current literature.
+9. Read Lafforgue's programmatic notes.
+10. Read Belfiore-Bennequin on DNNs, topoi, and stacks.
+11. Read Villani-McBurney on transformer networks and topos completion.
+
+The key discipline is to separate three layers: established topos theory,
+sheaf/topological deep learning, and speculative topos-based ML proposals.

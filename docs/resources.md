@@ -8,7 +8,8 @@ AI-relevant, or broader applied category theory.
 
 ### Category-Theoretical and Topos-Theoretical Frameworks in Machine Learning: A Survey
 
-- Link: <https://doi.org/10.3390/axioms14030204>
+- Links: <https://arxiv.org/abs/2408.14014>,
+  <https://doi.org/10.3390/axioms14030204>
 - Authors: Yiyang Jia, Guohong Peng, Zheng Yang, Tianhao Chen
 - Labels: Applied Category Theory, AI-Relevant, Speculative Bridge
 - Level: intermediate to advanced
@@ -18,6 +19,57 @@ AI-relevant, or broader applied category theory.
 - Caution: Valuable as a map of recent claims and references, but many of the
   topos-based ML directions are still exploratory. Read its topos sections
   alongside primary sources and the taxonomy in this repository.
+
+## Direct Topos-Based ML Proposals
+
+### Some Possible Roles for AI of Grothendieck Topos Theory
+
+- Link: <https://www.laurentlafforgue.org/Expose_Lafforgue_topos_AI_ETH_sept_2022.pdf>
+- Author: Laurent Lafforgue
+- Labels: Core Topos, AI-Relevant, Speculative Bridge
+- Level: advanced
+- Why it matters: A programmatic 2022 lecture sketching why Grothendieck
+  topoi, sheaf-theoretic completions, sites, symmetries, and meaningful
+  invariants might matter for AI.
+- Caution: This is a research vision rather than a ready-made ML method. Read
+  it after presheaves, sheaves, sites, and Grothendieck topoi are familiar.
+
+### Topos and Stacks of Deep Neural Networks
+
+- Link: <https://arxiv.org/abs/2106.14587>
+- Authors: Jean-Claude Belfiore, Daniel Bennequin
+- Labels: Core Topos, AI-Relevant, Speculative Bridge
+- Level: advanced
+- Why it matters: Proposes that deep neural networks can be represented as
+  objects in canonical Grothendieck topoi, with learning dynamics as morphism
+  flows and invariance structures modeled through stacks.
+- Caution: Ambitious and technically heavy. Requires sheaves, Grothendieck
+  topoi, fibered categories/stacks, and some logic or type-theoretic maturity.
+
+### The Topos of Transformer Networks
+
+- Link: <https://arxiv.org/abs/2403.18415>
+- Authors: Mattia Jacopo Villani, Peter McBurney
+- Labels: Core Topos, AI-Relevant, Speculative Bridge, Verify First
+- Level: advanced
+- Why it matters: Studies transformer expressivity through topos theory,
+  arguing that common neural architectures embed in a pretopos of
+  piecewise-linear functions while transformers live in its topos completion.
+- Caution: The arXiv page marks the paper as withdrawn and requiring major
+  revision. Treat it as a pointer to an idea, not as a stable result. Best read
+  only after learning pretopoi, topos completion, and the basic categorical view
+  of neural architectures.
+
+### Topos Theory for Generative AI and LLMs
+
+- Link: <https://arxiv.org/abs/2508.08293>
+- Author: Sridhar Mahadevan
+- Labels: AI-Relevant, Speculative Bridge
+- Level: advanced
+- Why it matters: Explores whether universal constructions in topos theory can
+  inspire new generative AI and LLM architectures.
+- Caution: Treat as a speculative recent proposal. Check the mathematical
+  assumptions carefully before using it as a foundation.
 
 ## Category Theory Prerequisites
 
@@ -47,6 +99,18 @@ AI-relevant, or broader applied category theory.
 - Level: beginner to intermediate
 - Why it matters: A standard entry point with material on cartesian closed
   categories and elementary topoi.
+
+### Sites and Grothendieck Toposes: An Introduction
+
+- Link: <https://arxiv.org/abs/2508.21609>
+- Authors: Olivia Caramello, Laurent Lafforgue
+- Labels: Core Topos
+- Level: intermediate
+- Why it matters: A progressive introduction from categories and sheaves to
+  Grothendieck topologies, sites, Giraud-style foundations, morphisms, points,
+  subtoposes, and classifying topoi.
+- Caution: More relevant after the first pass through basic category theory and
+  presheaves.
 
 ## Core Topos Theory
 
