@@ -81,15 +81,51 @@ N_\theta:\X\to\Ypred,\qquad \theta\in\ThetaSet,
 \]
 其目标是得到使 \(\Loss_{\D}(\theta)\) 较小的参数。因此，训练过程把数据集、参数化模型、损失函数和优化算法连接起来；它不是研究单个固定映射 \(N_\theta\)，而是研究如何从初始参数 \(\theta_0\) 得到训练后参数 \(\theta_T\)。
 
-\begin{principle}[三个相互区分的对象]
-讨论 AI 与范畴论的关系时，至少应区分以下三类对象：
-\begin{enumerate}
-\item 模型族：\(\{N_\theta:\X\to\Ypred\}_{\theta\in\ThetaSet}\)；
-\item 训练过程：\(\theta_0,\theta_1,\ldots,\theta_T\)；
-\item 训练后模型：固定参数 \(\theta_T\) 后得到的函数 \(N_{\theta_T}\)。
-\end{enumerate}
-若一个范畴论表述没有说明它指向的是模型族、训练过程还是训练后模型，那么该表述的数学对象尚未被充分确定。
-\end{principle}
+\subsection{可能的范畴化层次}
+
+在这一阶段，我们尚未定义一个唯一的“模型范畴”或“训练范畴”。事实上，深度学习对象可以从不同层次被范畴化，而不同层次需要不同的对象和态射。
+
+第一，固定参数后的模型可以被看作一个映射
+\[
+N_{\theta_T}:\X\to\Ypred.
+\]
+若只关心输入--输出行为，可以把它放在 \(\mathbf{Set}\)、\(\mathbf{Vect}\)、光滑流形范畴或可测空间范畴等已有范畴中，具体取决于 \(\X\) 和 \(\Ypred\) 的结构。此时讨论的是一个已训练模型作为态射，而不是训练过程本身。
+
+第二，参数化模型族可以被看作一个求值映射
+\[
+\operatorname{ev}_N:\ThetaSet\times \X\longrightarrow \Ypred,
+\qquad
+(\theta,x)\longmapsto N_\theta(x).
+\]
+若要把这类对象组织成一个范畴，就必须规定态射。例如，一个候选态射可以由参数变换、输入变换和输出变换组成，并要求相应的图表交换。也就是说，若
+\[
+N:\ThetaSet\times \X\to\Ypred,
+\qquad
+\widetilde N:\widetilde\ThetaSet\times \widetilde\X\to\widetilde\Ypred,
+\]
+则从 \(N\) 到 \(\widetilde N\) 的一个候选态射可由三个映射
+\[
+r:\ThetaSet\to\widetilde\ThetaSet,\qquad
+u:\X\to\widetilde\X,\qquad
+v:\Ypred\to\widetilde\Ypred
+\]
+组成，并要求
+\[
+v\bigl(N_\theta(x)\bigr)=\widetilde N_{r(\theta)}\bigl(u(x)\bigr)
+\]
+对所有 \(\theta\in\ThetaSet\) 和 \(x\in\X\) 成立。这只是一个可能的选择；若关心概率输出、光滑性、可测性、参数共享或架构保持性，还必须把这些条件加入态射定义中。
+
+第三，训练过程可以被看作参数空间中的离散动力系统。给定一个更新规则
+\[
+U_t:\ThetaSet\to\ThetaSet,
+\]
+训练轨迹满足
+\[
+\theta_{t+1}=U_t(\theta_t).
+\]
+这可以生成一个以参数状态为对象、以更新步骤为态射的路径范畴；也可以被看作优化算法在参数空间上的迭代过程。但这类范畴依赖数据集、损失函数、优化器和学习率等选择，因此不能从单个映射 \(N_\theta:\X\to\Ypred\) 自动推出。
+
+因此，后文谈到神经网络、Transformer 或 LLM 的范畴论建模时，将区分以下问题：我们是在研究已训练模型的输入--输出态射，参数化模型族，还是训练算法产生的轨迹？只有先固定这一层次，进一步定义对象、态射和相容条件才有意义。
 
 \section{监督学习中的样本集与损失}
 

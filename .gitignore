@@ -5,3 +5,9 @@ tmp/
 *.log
 *.out
 *.xdv
+*.synctex
+*.synctex.gz
+*.synctex(busy)
+*.synctex.gz(busy)
+.latex/
+.vscode/
