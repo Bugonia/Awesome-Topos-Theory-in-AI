@@ -26,6 +26,7 @@
 \newcommand{\D}{\mathcal D}
 \newcommand{\X}{\mathcal X}
 \newcommand{\Y}{\mathcal Y}
+\newcommand{\Ypred}{\mathcal Y'}
 \newcommand{\ThetaSet}{\Theta}
 \newcommand{\Loss}{\mathcal L}
 \newcommand{\E}{\mathbb E}
@@ -38,7 +39,7 @@
 \newcommand{\argmin}{\operatorname*{arg\,min}}
 \newcommand{\argmax}{\operatorname*{arg\,max}}
 
-\title{给范畴论背景读者的 AI 算法讲义：神经网络、Transformer 与 LLM}
+\title{深度学习的数学结构}
 \author{}
 \date{\today}
 
@@ -46,7 +47,7 @@
 \maketitle
 
 \begin{abstract}
-本文面向具有范畴论或 topos 背景、但不熟悉现代深度学习算法细节的读者。本文的目的不是讨论工程调参，而是建立一套统一符号，用以描述监督学习、神经网络、反向传播、卷积网络、图神经网络、Transformer 和大语言模型中的基本数学对象。若要进一步讨论这些对象是否能被组织成范畴、预层、层、stack 或 topos，首先需要明确 AI 侧的对象、态射候选、局部结构和训练目标。
+本文面向具有范畴论或 topos 背景、但不熟悉现代深度学习算法细节的读者。本文的目的不是讨论工程调参，而是建立一套统一符号，用以描述监督学习、神经网络、反向传播、卷积网络、图神经网络、Transformer 和大语言模型中的基本数学对象。若要进一步讨论这些对象是否能被组织成范畴、预层、层、stack 或 topos，首先需要明确 AI 侧的对象、态射候选、局部结构、损失函数和优化过程。
 \end{abstract}
 
 \section{目的与基本记号}
@@ -55,37 +56,49 @@
 \[
 f:X\to Y.
 \]
-这种观点刻画了固定参数后的输入--输出行为，但不足以描述机器学习中实际使用的模型结构。一个可训练模型通常同时包含以下四类数据：
+这种观点刻画了固定参数后的输入--输出行为，但不足以描述机器学习中实际使用的模型结构。为了描述训练问题，需要同时给出以下四类组成部分：
 \begin{enumerate}
-\item 输入、输出和标签所在的数据空间；
+\item 输入、模型预测和标签所在的空间；
 \item 参数空间；
 \item 用于评价预测误差的损失函数；
 \item 在参数空间中更新参数的训练算法。
 \end{enumerate}
-因此，本文采用的基本记号是
+具体地，训练数据集通常记为
 \[
-N_\theta:\X\to\Y,\qquad \theta\in\ThetaSet,
+\D=\{(x_i,y_i)\}_{i=1}^n,\qquad x_i\in\X,\quad y_i\in\Y,
 \]
-其中 \(\ThetaSet\) 表示参数空间。训练过程并不是研究单个固定映射 \(N_\theta\)，而是在参数空间 \(\ThetaSet\) 中寻找使经验损失较小的参数。
+其中 \(\X\) 是输入空间，\(\Y\) 是标签或目标输出空间。模型预测所在的空间记为 \(\Ypred\)。模型不是单个映射，而是由参数空间 \(\ThetaSet\) 索引的一族映射
+\[
+N_\theta:\X\to\Ypred,\qquad \theta\in\ThetaSet,
+\]
+损失函数把模型预测与标签比较，并给出经验风险
+\[
+\Loss_{\D}(\theta)=\frac1n\sum_{i=1}^n \ell(N_\theta(x_i),y_i).
+\]
+训练算法则在参数空间中产生参数序列
+\[
+\theta_0,\theta_1,\ldots,\theta_T,
+\]
+其目标是得到使 \(\Loss_{\D}(\theta)\) 较小的参数。因此，训练过程把数据集、参数化模型、损失函数和优化算法连接起来；它不是研究单个固定映射 \(N_\theta\)，而是研究如何从初始参数 \(\theta_0\) 得到训练后参数 \(\theta_T\)。
 
 \begin{principle}[三个相互区分的对象]
 讨论 AI 与范畴论的关系时，至少应区分以下三类对象：
 \begin{enumerate}
-\item 模型族：\(\{N_\theta:\X\to\Y\}_{\theta\in\ThetaSet}\)；
+\item 模型族：\(\{N_\theta:\X\to\Ypred\}_{\theta\in\ThetaSet}\)；
 \item 训练过程：\(\theta_0,\theta_1,\ldots,\theta_T\)；
 \item 训练后模型：固定参数 \(\theta_T\) 后得到的函数 \(N_{\theta_T}\)。
 \end{enumerate}
 若一个范畴论表述没有说明它指向的是模型族、训练过程还是训练后模型，那么该表述的数学对象尚未被充分确定。
 \end{principle}
 
-\section{监督学习的统一符号}
+\section{监督学习中的样本集与损失}
 
-\begin{definition}[数据集]
-监督学习数据集记为
+\begin{definition}[训练数据集]
+沿用上一节记号，监督学习的训练数据集是有限样本集
 \[
 \D=\{(x_i,y_i)\}_{i=1}^n,\qquad x_i\in\X,\quad y_i\in\Y.
 \]
-这里 \(\X\) 是输入空间，\(\Y\) 是标签或输出空间。
+这里 \(\Y\) 是标签空间；模型输出空间 \(\Ypred\) 可以与 \(\Y\) 不同。
 \end{definition}
 
 典型例子如下：
@@ -104,7 +117,7 @@ N_\theta:\X\to\Y,\qquad \theta\in\ThetaSet,
 \end{center}
 
 \begin{definition}[损失函数]
-模型 \(N_\theta:\X\to\Y'\) 的损失函数通常写作
+模型 \(N_\theta:\X\to\Ypred\) 的损失函数通常写作
 \[
 \ell(N_\theta(x),y)\in\R_{\ge 0}.
 \]
