@@ -189,6 +189,20 @@ Use the checklist in [docs/resource-taxonomy.md](docs/resource-taxonomy.md).
 - [docs/ai-bridges.md](docs/ai-bridges.md): careful AI-facing bridge topics.
 - [docs/resource-taxonomy.md](docs/resource-taxonomy.md): labels and inclusion
   criteria.
+- [给AI背景读者的阅读材料](给AI背景读者的阅读材料): materials for readers
+  who know AI/LLMs and want a careful route into category theory, sheaves, and
+  topos theory.
+- [给AI背景读者的阅读材料/01-讲义/topos_ai_neural_structures_lecture_zh.pdf](给AI背景读者的阅读材料/01-讲义/topos_ai_neural_structures_lecture_zh.pdf):
+  Chinese textbook-style lecture notes explaining how neural-network and LLM
+  structures can be discussed using categorical, sheaf-theoretic, and
+  topos-theoretic language.
+- [给AI背景读者的阅读材料/02-背景综述](给AI背景读者的阅读材料/02-背景综述):
+  background survey drafts and compiled PDFs.
+- [给范畴论背景读者的阅读材料](给范畴论背景读者的阅读材料): materials for readers
+  who know category theory/topos theory and need the AI algorithm side.
+- [给范畴论背景读者的阅读材料/01-AI算法讲义/ai_algorithms_for_category_readers_zh.pdf](给范畴论背景读者的阅读材料/01-AI算法讲义/ai_algorithms_for_category_readers_zh.pdf):
+  Chinese lecture notes on neural networks, training, backpropagation, CNNs,
+  GNNs, Transformers, LLM decoding, RAG, and tool use with unified notation.
 - [CONTRIBUTING.md](CONTRIBUTING.md): contribution rules for keeping the list
   reliable.
 
