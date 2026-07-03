@@ -6,6 +6,19 @@ AI-relevant, or broader applied category theory.
 
 ## Recent Surveys
 
+### Category Theory in Machine Learning
+
+- Link: <https://arxiv.org/abs/2106.07032>
+- Authors: Dan Shiebler, Bruno Gavranovic, Paul Wilson
+- Labels: Applied Category Theory, AI-Relevant
+- Level: intermediate
+- Why it matters: A 2021 survey of category-theoretic approaches to machine
+  learning, organized around gradient-based learning, categorical probability,
+  and invariant/equivariant learning.
+- Caution: This is a broad applied category theory survey rather than a
+  topos-theoretic paper. Use it to understand the categorical ML background
+  that later topos-based surveys build on.
+
 ### Category-Theoretical and Topos-Theoretical Frameworks in Machine Learning: A Survey
 
 - Links: <https://arxiv.org/abs/2408.14014>,
@@ -42,9 +55,13 @@ AI-relevant, or broader applied category theory.
 - Level: advanced
 - Why it matters: Proposes that deep neural networks can be represented as
   objects in canonical Grothendieck topoi, with learning dynamics as morphism
-  flows and invariance structures modeled through stacks.
-- Caution: Ambitious and technically heavy. Requires sheaves, Grothendieck
-  topoi, fibered categories/stacks, and some logic or type-theoretic maturity.
+  flows and invariance structures modeled through Giraud stacks. The arXiv v3
+  manuscript is a long, technically ambitious 2022 treatment connecting DNN
+  architectures, stacks, internal logics, model categories, homology, and
+  type-theoretic semantics.
+- Caution: Ambitious and technically heavy. Treat it as a research framework,
+  not a standard ML method. Requires sheaves, Grothendieck topoi, fibered
+  categories/stacks, and some logic or type-theoretic maturity.
 
 ### The Topos of Transformer Networks
 

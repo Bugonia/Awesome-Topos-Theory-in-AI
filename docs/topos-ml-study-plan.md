@@ -101,6 +101,7 @@ Checkpoint questions:
 
 Suggested applied bridge:
 
+- Shiebler-Gavranovic-Wilson, *Category Theory in Machine Learning*.
 - Abramsky-Brandenburger contextuality.
 - Sheaf neural networks.
 - Neural sheaf diffusion.
@@ -227,13 +228,15 @@ research vision.
 
 Read in this order:
 
-1. Jia-Peng-Yang-Chen survey.
-2. Lafforgue, *Some Possible Roles for AI of Grothendieck Topos Theory*.
-3. Belfiore-Bennequin, *Topos and Stacks of Deep Neural Networks*.
-4. Villani-McBurney, *The Topos of Transformer Networks*, noting that the
+1. Shiebler-Gavranovic-Wilson, *Category Theory in Machine Learning*, for the
+   broader applied category theory background.
+2. Jia-Peng-Yang-Chen survey.
+3. Lafforgue, *Some Possible Roles for AI of Grothendieck Topos Theory*.
+4. Belfiore-Bennequin, *Topos and Stacks of Deep Neural Networks*.
+5. Villani-McBurney, *The Topos of Transformer Networks*, noting that the
    arXiv version is withdrawn and should be treated as an unstable research
    pointer.
-5. Optional: Mahadevan, *Topos Theory for Generative AI and LLMs*.
+6. Optional: Mahadevan, *Topos Theory for Generative AI and LLMs*.
 
 For each paper, ask:
 
