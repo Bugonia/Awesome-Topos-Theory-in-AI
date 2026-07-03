@@ -88,6 +88,33 @@ AI-relevant, or broader applied category theory.
 - Caution: Treat as a speculative recent proposal. Check the mathematical
   assumptions carefully before using it as a foundation.
 
+## Information Cohomology and Semantic Information
+
+### The Homological Nature of Entropy
+
+- Link: <https://doi.org/10.3390/e17053253>
+- Authors: Pierre Baudot, Daniel Bennequin
+- Labels: Applied Category Theory, AI-Relevant, Speculative Bridge
+- Level: advanced
+- Why it matters: Develops entropy, mutual information, and related
+  information quantities as cohomological invariants of information structures,
+  including classical, quantum, and dynamic probability settings.
+- Caution: This is not a machine learning architecture paper. It is useful
+  background for the semantic-information and homological language used in
+  later DNN/topos proposals, especially Belfiore-Bennequin.
+
+### Information Structures and Their Cohomology
+
+- Link: <https://arxiv.org/abs/1709.07807>
+- Author: Juan Pablo Vigneaux
+- Labels: Core Topos, Applied Category Theory, AI-Relevant
+- Level: advanced
+- Why it matters: Recasts information structures as categories of observables,
+  ringed sites, and sheaf/topos-flavored objects, extending information
+  cohomology as a derived-functor construction.
+- Caution: Best read as mathematical background on contextuality, entropy, and
+  information cohomology rather than as a direct topos-based ML method.
+
 ## Category Theory Prerequisites
 
 ### Basic Category Theory
@@ -208,6 +235,20 @@ AI-relevant, or broader applied category theory.
   especially around heterophily and oversmoothing.
 - Caution: Classify as sheaf-based graph learning, not as core topos theory.
 
+### Sheaf Representation Learning
+
+- Link: local PDF reviewed; public repository URL to verify
+- Author: Thomas Gebhart
+- Labels: Sheaf-Theoretic, AI-Relevant, Verify First
+- Level: intermediate to advanced
+- Why it matters: A 2023 doctoral dissertation developing sheaf-theoretic
+  representation learning, including sheaf neural networks, sheaf embeddings,
+  topologically constrained representation learning, and knowledge graph
+  reasoning through sheaf-based consistency objectives.
+- Caution: The local PDF identifies the University of Minnesota dissertation,
+  but a stable public URL should be verified before relying on the link in a
+  public bibliography.
+
 ## Topological Deep Learning Near Topos and Sheaves
 
 ### TopoU-Net: A U-Net Architecture for Topological Domains
@@ -224,6 +265,19 @@ AI-relevant, or broader applied category theory.
 - Caution: This is topological deep learning on combinatorial complexes, not
   topos theory. It is useful background for higher-order structured data and
   sheaf/topology-adjacent ML.
+
+### Tangent Bundle Convolutional Learning: From Manifolds to Cellular Sheaves and Back
+
+- Link: <https://doi.org/10.1109/TSP.2024.3379862>
+- Authors: Claudio Battiloro, Zhiyang Wang, Hans Riess, Paolo Di Lorenzo,
+  Alejandro Ribeiro
+- Labels: Sheaf-Theoretic, AI-Relevant, Applied Category Theory
+- Level: advanced
+- Why it matters: Introduces tangent bundle filters and tangent bundle neural
+  networks, then discretizes them through cellular sheaves, showing a principled
+  link between continuous tangent-bundle learning and sheaf neural networks.
+- Caution: This is sheaf/topological deep learning and geometric signal
+  processing, not full Grothendieck topos theory.
 
 ## Broader Applied Category Theory Near AI
 

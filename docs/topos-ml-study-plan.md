@@ -105,6 +105,9 @@ Suggested applied bridge:
 - Abramsky-Brandenburger contextuality.
 - Sheaf neural networks.
 - Neural sheaf diffusion.
+- Gebhart, *Sheaf Representation Learning*.
+- Battiloro-Wang-Riess-Di Lorenzo-Ribeiro, *Tangent Bundle Convolutional
+  Learning*.
 
 ## Phase 4: Sites and Grothendieck Topologies
 
@@ -237,6 +240,9 @@ Read in this order:
    arXiv version is withdrawn and should be treated as an unstable research
    pointer.
 6. Optional: Mahadevan, *Topos Theory for Generative AI and LLMs*.
+7. Optional semantic-information background: Baudot-Bennequin, *The
+   Homological Nature of Entropy*, and Vigneaux, *Information Structures and
+   Their Cohomology*.
 
 For each paper, ask:
 
