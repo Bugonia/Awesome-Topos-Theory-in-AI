@@ -88,6 +88,20 @@ AI-relevant, or broader applied category theory.
 - Caution: Treat as a speculative recent proposal. Check the mathematical
   assumptions carefully before using it as a foundation.
 
+### PROMETHEUS: Automating Deep Causal Research Integrating Text, Data and Models
+
+- Link: <https://arxiv.org/abs/2605.12835>
+- Author: Sridhar Mahadevan
+- Labels: Sheaf-Theoretic, AI-Relevant, Speculative Bridge
+- Level: advanced
+- Why it matters: Proposes "causal atlases" and "Topos World Models" built from
+  sheaf-like families of local causal predictive-state models over explicit
+  covers of research corpora, with restriction maps and gluing diagnostics for
+  agreement, drift, contradiction, and underdetermination.
+- Caution: This is a recent speculative AI-research framework rather than
+  established Grothendieck topos theory. Read it as an LLM/causal-research
+  application idea using sheaf/topos language.
+
 ## Information Cohomology and Semantic Information
 
 ### The Homological Nature of Entropy
@@ -229,11 +243,67 @@ AI-relevant, or broader applied category theory.
 ### Neural Sheaf Diffusion
 
 - Link: <https://arxiv.org/abs/2202.04579>
+- Authors: Cristian Bodnar, Francesco Di Giovanni, Benjamin Paul Chamberlain,
+  Pietro Liò, Michael M. Bronstein
 - Labels: Sheaf-Theoretic, AI-Relevant
 - Level: intermediate
-- Why it matters: Develops sheaf-based diffusion ideas for graph learning,
-  especially around heterophily and oversmoothing.
+- Why it matters: Develops cellular-sheaf diffusion models for graph learning,
+  showing how non-trivial sheaf structure changes heterophily and oversmoothing
+  behavior compared with standard graph diffusion and GNNs.
 - Caution: Classify as sheaf-based graph learning, not as core topos theory.
+
+### Sheaf Neural Networks with Connection Laplacians
+
+- Link: <https://arxiv.org/abs/2206.08702>
+- Authors: Federico Barbero, Cristian Bodnar, Haitz Sáez de Ocáriz Borde,
+  Michael Bronstein, Petar Veličković, Pietro Liò
+- Labels: Sheaf-Theoretic, AI-Relevant
+- Level: intermediate
+- Why it matters: Computes sheaves for graph learning via connection
+  Laplacians inspired by Riemannian geometry, using manifold- and graph-aware
+  orthogonal maps to align tangent spaces while reducing the overhead of fully
+  learned sheaves.
+- Caution: A practical sheaf neural network method, not full topos theory.
+
+### Sheaf Hypergraph Networks
+
+- Link: <https://arxiv.org/abs/2309.17116>
+- Authors: Iulia Duta, Giulia Cassarà, Fabrizio Silvestri, Pietro Liò
+- Labels: Sheaf-Theoretic, AI-Relevant
+- Level: intermediate
+- Why it matters: Extends cellular sheaves to hypergraphs and introduces
+  linear and non-linear sheaf hypergraph Laplacians, yielding neural and
+  convolutional models for higher-order node classification.
+- Caution: Strongly relevant to sheaf/topological deep learning; still distinct
+  from Grothendieck topos semantics.
+
+### Heterogeneous Sheaf Neural Networks
+
+- Link: <https://arxiv.org/abs/2409.08036>
+- Authors: Luke Braithwaite, Alessio Borgi, Gabriele Onorato, Kristjan
+  Tarantelli, Francesco Restuccia, Fabrizio Silvestri, Pietro Liò
+- Labels: Sheaf-Theoretic, AI-Relevant
+- Level: intermediate
+- Why it matters: Uses cellular sheaves to encode heterogeneous graph types
+  directly in the data structure through type-aware local feature spaces and
+  learned restriction maps, with a stalk-space pooling method for graph-level
+  prediction.
+- Caution: Useful for typed/heterogeneous graph learning; not a general
+  topos-based AI theory.
+
+### Cooperative Sheaf Neural Networks
+
+- Link: <https://arxiv.org/abs/2507.00647>
+- Authors: André Ribeiro, Ana Luiza Tenório, Juan Belieni, Amauri H. Souza,
+  Diego Mesquita
+- Labels: Sheaf-Theoretic, AI-Relevant
+- Level: intermediate
+- Why it matters: Introduces cellular sheaves over directed graphs to overcome
+  the lack of message directionality in prior sheaf diffusion methods, enabling
+  cooperative listen/propagate behavior and potentially mitigating
+  oversquashing.
+- Caution: Accepted to ICLR 2026 according to the arXiv metadata. Treat as a
+  recent sheaf diffusion architecture, not core topos theory.
 
 ### Sheaf Representation Learning
 
@@ -320,6 +390,19 @@ AI-relevant, or broader applied category theory.
   structured domains.
 - Caution: This is geometric and categorical-adjacent background, not topos
   theory.
+
+### Kan Extension Transformers: A Categorical Unification of Attention, Diffusion, and Predict-Detach Self-Conditioning
+
+- Link: <https://arxiv.org/abs/2605.27259>
+- Author: Sridhar Mahadevan
+- Labels: Applied Category Theory, AI-Relevant, Speculative Bridge
+- Level: advanced
+- Why it matters: Frames Transformer layers as weighted structured extension
+  operators, connecting standard attention, sparse incidence mixing,
+  higher-order simplicial neighborhoods, and diffusion-style completion through
+  Kan-extension language.
+- Caution: Categorical Transformer work rather than topos theory. Include it as
+  nearby categorical AI background, especially for readers interested in LLMs.
 
 ## How To Read This List
 
